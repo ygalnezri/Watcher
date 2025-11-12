@@ -51,7 +51,7 @@ Watcher empowers your security operations with comprehensive threat detection an
 
 Extend Watcher's capabilities with powerful integrations and management tools:
 
-- **TheHive Full Synchronization** — Integration with [TheHive](https://thehive-project.org/) featuring automated alert creation, smart case management, IOC enrichment, and ready-to-use Cortex Analyzers & Responders. [Learn more →](https://thalesgroup-cert.github.io/Watcher/README.html#thehive-export)
+- **TheHive Full Synchronization** — Integration with [TheHive](https://thehive-project.org/) featuring automated alert creation, smart case management, IOC enrichment, and ready-to-use Cortex Analyzers & Responders. Detailed configuration are provided in the documentation [here.](https://thalesgroup-cert.github.io/Watcher/README.html#thehive-export)
 - **MISP Integration** — Seamlessly export Indicators of Compromise (IOCs) to [MISP](https://www.misp-project.org/) with smart UUID tracking, automatic object creation, and manual attribute updates for collaborative threat intelligence sharing
 - **Flexible Authentication** — Support for both LDAP and local authentication systems
 - **Smart Notifications** — Receive email, Slack, or Citadel alerts for critical findings and threshold violations
