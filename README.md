@@ -33,7 +33,7 @@ Watcher is a Django & React JS platform designed to discover and monitor emergin
 
 Watcher empowers your security operations with comprehensive threat detection and monitoring:
 
-- **AI-Driven Threat Intelligence** — Transform raw threat data into actionable intelligence with automated weekly digests of top-5 trending cybersecurity topics, real-time breaking news alerts when threats emerge, on-demand summaries for any security keyword, intelligent CVE and threat actor extraction.
+- **AI-Driven Threat Intelligence** — Transform raw threat data into actionable intelligence with automated weekly digests of top-5 trending cybersecurity topics, real-time breaking news alerts when threats emerge, on-demand summaries for any security keyword including related CVE and threat actor details.
 
 - **Emerging Threat Detection** — Monitor cybersecurity trends via RSS feeds from CERT-FR (www.cert.ssi.gouv.fr), CERT-EU (www.cert.europa.eu), US-CERT (www.us-cert.gov), Australian Cyber Security Centre (www.cyber.gov.au), and more. Track new vulnerabilities, malware campaigns, and threat advisories as they appear.
 
