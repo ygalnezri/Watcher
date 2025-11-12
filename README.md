@@ -76,14 +76,14 @@ Watcher leverages open source tools and libraries:
 
 ## App Preview
 
-### AI-Powered Weekly Summary & Breaking News
-<p align="center">
-    <img alt="Weekly Summary & Breaking News" src="/Watcher/static/weekly-breaking-summary.gif" width="90%">
-</p>
-
 ### Threat Detection
 <p align="center">
     <img alt="Threats Watcher" src="/Watcher/static/threats-watcher.gif" width="90%">
+</p>
+
+### AI-Powered Weekly Summary & Breaking News
+<p align="center">
+    <img alt="Weekly Summary & Breaking News" src="/Watcher/static/weekly-breaking-summary.gif" width="90%">
 </p>
 
 ### Legitimate Domain List
