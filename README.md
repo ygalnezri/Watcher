@@ -51,7 +51,7 @@ Watcher empowers your security operations with comprehensive threat detection an
 
 Extend Watcher's capabilities with powerful integrations and management tools:
 
-- **TheHive Full Synchronization** — Integration with [TheHive](https://thehive-project.org/) featuring automated alert creation across all modules with zero manual intervention, intelligent case updates that add observables without creating duplicates, automatic IOC enrichment with contextual tags, custom field integration for cross-platform tracking, and ready-to-use Cortex Analyzers & Responders available in the [official Cortex-Analyzers repository](https://github.com/TheHive-Project/Cortex-Analyzers/tree/master)
+- **TheHive Full Synchronization** — Integration with [TheHive](https://thehive-project.org/) featuring automated alert creation, smart case management, IOC enrichment, and ready-to-use Cortex Analyzers & Responders. [Learn more →](https://thalesgroup-cert.github.io/Watcher/README.html#thehive-export)
 - **MISP Integration** — Seamlessly export Indicators of Compromise (IOCs) to [MISP](https://www.misp-project.org/) with smart UUID tracking, automatic object creation, and manual attribute updates for collaborative threat intelligence sharing
 - **Flexible Authentication** — Support for both LDAP and local authentication systems
 - **Smart Notifications** — Receive email, Slack, or Citadel alerts for critical findings and threshold violations
@@ -86,6 +86,11 @@ Watcher leverages open source tools and libraries:
     <img alt="Weekly Summary & Breaking News" src="/Watcher/static/weekly-breaking-summary.gif" width="90%">
 </p>
 
+### Suspicious domain names detection
+<p align="center">
+    <img alt="Suspicious domain names detection" src="/Watcher/static/suspicious-domain-names-detection.gif" width="90%">
+</p>
+
 ### Legitimate Domain List
 <p align="center">
     <img alt="Legitimate Domain" src="/Watcher/static/legitimate-domain.gif" width="90%">
@@ -99,11 +104,6 @@ Watcher leverages open source tools and libraries:
 ### Suspicious domain names monitoring
 <p align="center">
     <img alt="Suspicious domain names monitoring" src="/Watcher/static/suspicious-domain-names-monitoring.gif" width="90%">
-</p>
-
-### Suspicious domain names detection
-<p align="center">
-    <img alt="Suspicious domain names detection" src="/Watcher/static/suspicious-domain-names-detection.gif" width="90%">
 </p>
 
 ### Theme Previews
