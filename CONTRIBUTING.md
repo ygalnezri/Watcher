@@ -94,6 +94,14 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 * Add/update tests where relevant.
 * Update documentation when introducing changes.
 
+## Contributors
+
+Thanks goes to these wonderful people !
+
+<p align="center">
+  <img src="https://contrib.rocks/image?repo=thalesgroup-cert/Watcher" alt="Contributors" />
+</p>
+
 ---
 
 Following these steps helps us keep **Watcher** reliable, maintainable, and secure.
