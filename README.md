@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <strong>Automated Cybersecurity Threat Detection Platform</strong>
+    <strong>AI-Powered Automated Cybersecurity Threat Detection Platform</strong>
 </p>
 
 <p align="center">
@@ -27,11 +27,13 @@
     </a>
 </p>
 
-Watcher is a Django & React JS platform designed to discover and monitor emerging cybersecurity threats. It can be deployed on webservers or quickly run via Docker.
+Watcher is a Django & React JS platform designed to discover and monitor emerging cybersecurity threats with **AI-powered threat intelligence analysis**. It can be deployed on webservers or quickly run via Docker.
 
 ## Watcher Capabilities
 
 Watcher empowers your security operations with comprehensive threat detection and monitoring:
+
+- **AI-Driven Threat Intelligence** — Transform raw threat data into actionable intelligence with automated weekly digests of top-5 trending cybersecurity topics, real-time breaking news alerts when threats emerge, on-demand summaries for any security keyword, intelligent CVE and threat actor extraction.
 
 - **Emerging Threat Detection** — Monitor cybersecurity trends via RSS feeds from CERT-FR (www.cert.ssi.gouv.fr), CERT-EU (www.cert.europa.eu), US-CERT (www.us-cert.gov), Australian Cyber Security Centre (www.cyber.gov.au), and more. Track new vulnerabilities, malware campaigns, and threat advisories as they appear.
 
@@ -49,10 +51,10 @@ Watcher empowers your security operations with comprehensive threat detection an
 
 Extend Watcher's capabilities with powerful integrations and management tools:
 
-- **Incident Response Integration** — Automatically create cases on [TheHive](https://thehive-project.org/) and events on [MISP](https://www.misp-project.org/) for streamlined incident handling
-- **IOCs Export** — Seamlessly export Indicators of Compromise (IOCs) to TheHive and MISP for threat intelligence sharing
+- **TheHive Full Synchronization** — Integration with [TheHive](https://thehive-project.org/) featuring automated alert creation across all modules with zero manual intervention, intelligent case updates that add observables without creating duplicates, automatic IOC enrichment with contextual tags, custom field integration for cross-platform tracking, and ready-to-use Cortex Analyzers & Responders available in the [official Cortex-Analyzers repository](https://github.com/TheHive-Project/Cortex-Analyzers/tree/master)
+- **MISP Integration** — Seamlessly export Indicators of Compromise (IOCs) to [MISP](https://www.misp-project.org/) with smart UUID tracking, automatic object creation, and manual attribute updates for collaborative threat intelligence sharing
 - **Flexible Authentication** — Support for both LDAP and local authentication systems
-- **Smart Notifications** — Receive email alerts for critical findings and threshold violations
+- **Smart Notifications** — Receive email, Slack, or Citadel alerts for critical findings and threshold violations
 - **Ticketing System Integration** — Automatically feed your ticketing system with security findings
 - **Comprehensive Admin Interface** — Manage all aspects of Watcher through Django's powerful admin panel
 - **Advanced Access Control** — Granular user permissions and group management for team collaboration
@@ -61,24 +63,29 @@ Extend Watcher's capabilities with powerful integrations and management tools:
 ## Involved dependencies
 
 Watcher leverages open source tools and libraries:
-- [**certstream**](https://github.com/CaliDog/certstream-python)
-- [**dnstwist**](https://github.com/elceef/dnstwist)
-- [**Searx**](https://searx.github.io/searx/)
-- [**PyMISP**](https://github.com/MISP/PyMISP)
-- [**TLSH**](https://github.com/trendmicro/tlsh)
-- [**shadow-useragent**](https://github.com/lobstrio/shadow-useragent)
-- [**NLTK**](https://www.nltk.org/)
+- [**Hugging Face Transformers**](https://huggingface.co/docs/transformers) — AI/ML framework powering threat intelligence summarization and entity extraction
+- [**google/flan-t5-base**](https://huggingface.co/google/flan-t5-base) — Text-to-text generation model for AI-powered threat summaries
+- [**dslim/bert-base-NER**](https://huggingface.co/dslim/bert-base-NER) — Named Entity Recognition for automatic IOC extraction
+- [**certstream**](https://github.com/CaliDog/certstream-python) — Certificate Transparency monitoring
+- [**dnstwist**](https://github.com/elceef/dnstwist) — Domain name permutation engine
+- [**Searx**](https://searx.github.io/searx/) — Privacy-respecting metasearch engine
+- [**PyMISP**](https://github.com/MISP/PyMISP) — MISP threat intelligence platform integration
+- [**TLSH**](https://github.com/trendmicro/tlsh) — Fuzzy hashing for content similarity detection
+- [**shadow-useragent**](https://github.com/lobstrio/shadow-useragent) — User-Agent rotation library
+- [**NLTK**](https://www.nltk.org/) — Natural Language Toolkit for text processing
 
 ## App Preview
+
+### AI-Powered Weekly Summary & Breaking News
+<p align="center">
+    <img alt="Weekly Summary & Breaking News" src="/Watcher/static/weekly-breaking-summary.gif" width="90%">
+</p>
+
+**Automated threat intelligence at your fingertips** — AI-powered weekly reports with automatic CVE extraction, threat actor identification, and breaking news alerts when keywords cross configurable thresholds. Powered by Hugging Face Transformers.
 
 ### Threat Detection
 <p align="center">
     <img alt="Threats Watcher" src="/Watcher/static/threats-watcher.gif" width="90%">
-</p>
-
-### Weekly Summary & Breaking News
-<p align="center">
-    <img alt="Threats Watcher" src="/Watcher/static/weekly-breaking-summary.gif" width="90%">
 </p>
 
 ### Legitimate Domain List
@@ -101,8 +108,6 @@ Watcher leverages open source tools and libraries:
     <img alt="Suspicious domain names detection" src="/Watcher/static/suspicious-domain-names-detection.gif" width="90%">
 </p>
 
-Django provides a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project: Users management, user group management, Watcher configuration, usage logs...
-
 ### Theme Previews
 
 <p align="center">
@@ -121,6 +126,8 @@ Watcher offers multiple visual themes to match your preferences and working envi
 <p align="center">
     <img alt="Admin Interface" src="/Watcher/static/admin-interface.gif" width="90%">
 </p>
+
+Django provides a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project: Users management, user group management, Watcher configuration, usage logs...
 
 ## Installation
 
