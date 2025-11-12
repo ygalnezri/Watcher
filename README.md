@@ -81,8 +81,6 @@ Watcher leverages open source tools and libraries:
     <img alt="Weekly Summary & Breaking News" src="/Watcher/static/weekly-breaking-summary.gif" width="90%">
 </p>
 
-**Automated threat intelligence at your fingertips** — AI-powered weekly reports with automatic CVE extraction, threat actor identification, and breaking news alerts when keywords cross configurable thresholds. Powered by Hugging Face Transformers.
-
 ### Threat Detection
 <p align="center">
     <img alt="Threats Watcher" src="/Watcher/static/threats-watcher.gif" width="90%">
