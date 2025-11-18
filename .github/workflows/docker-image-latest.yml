@@ -99,8 +99,6 @@ jobs:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         tags: |
           type=raw,value=latest
-          type=sha,prefix={{branch}}-
-          type=ref,event=branch
 
     - name: Build and push to GHCR
       uses: docker/build-push-action@v5
