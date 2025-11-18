@@ -106,7 +106,7 @@ jobs:
         context: ./Watcher
         push: true
         tags: ${{ steps.meta-ghcr.outputs.tags }}
-        labels: ${{ steps.meta-ghcr.outputs.labels }}
+        # labels: ${{ steps.meta-ghcr.outputs.labels }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
