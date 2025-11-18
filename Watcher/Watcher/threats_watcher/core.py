@@ -1,4 +1,4 @@
-# coding=utf-8 
+# coding=utf-8
 import logging
 from .models import BannedWord, Source, TrendyWord, PostUrl, Summary, Subscriber
 from django.utils import timezone
