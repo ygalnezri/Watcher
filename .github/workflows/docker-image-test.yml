@@ -91,13 +91,23 @@ jobs:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Extract metadata for GHCR (tags, labels)
+      id: meta-ghcr
+      uses: docker/metadata-action@v5
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=raw,value=test
+          type=sha,prefix=test-
 
     - name: Build and push to GHCR
       uses: docker/build-push-action@v5
       with:
         context: ./Watcher
         push: true
-        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:test
+        tags: ${{ steps.meta-ghcr.outputs.tags }}
+        labels: ${{ steps.meta-ghcr.outputs.labels }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
@@ -113,10 +123,20 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
       continue-on-error: true
 
+    - name: Extract metadata for Docker Hub (DEPRECATED)
+      id: meta-dockerhub
+      uses: docker/metadata-action@v5
+      with:
+        images: felix83000/watcher
+        tags: |
+          type=raw,value=test
+      continue-on-error: true
+
     - name: Build and push to Docker Hub (DEPRECATED)
       uses: docker/build-push-action@v5
       with:
         context: ./Watcher
         push: true
-        tags: felix83000/watcher:test
+        tags: ${{ steps.meta-dockerhub.outputs.tags }}
+        labels: ${{ steps.meta-dockerhub.outputs.labels }}
       continue-on-error: true
