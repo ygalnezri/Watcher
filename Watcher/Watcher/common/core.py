@@ -1,4 +1,4 @@
-import logging
+import logging  
 from .utils.send_slack_messages import send_slack_message
 from .utils.send_citadel_messages import send_citadel_message
 from .utils.send_email_notifications import send_email_notifications
